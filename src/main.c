@@ -11,6 +11,7 @@ int main(void)
     InitWindow(screenWidth, screenHeight, "Students");
     SetTargetFPS(60);  
     init_game(&game);
+    SetWindowSize(450, 800);
     while (!WindowShouldClose())    // Detect window close button or ESC key
     {
         update_game(&game);
