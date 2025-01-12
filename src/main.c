@@ -7,7 +7,7 @@ Game game;
 int main(void)
 {
     const int screenWidth = 450;
-    const int screenHeight = 800;
+    const int screenHeight = 500;
     InitWindow(screenWidth, screenHeight, "Students");
     SetTargetFPS(60);  
     init_game(&game);
