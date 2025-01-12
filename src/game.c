@@ -39,7 +39,7 @@ void update_game(Game *game){
 void draw_game(Game *game){
     switch(game->status){
         case INITIAL:
-            DrawText("¿Sobrevivirá la profesora\n\na los alumnos agobiantes?\n\n\n\n\nPress Enter to start", 50, 200, 20, WHITE);
+            DrawText("¿Sobrevivirá la profesora\n\na los alumnos agobiantes?\n\n\n\n\nPress Enter to start", 50, 10, 20, WHITE);
             break;
         case MENU:
             //Mostrar el menú
