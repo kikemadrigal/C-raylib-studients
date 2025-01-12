@@ -25,13 +25,13 @@ Texture2D getTexturePlayer(){
 void updatePlayer(Player *player, Input input){
     if(player->position.x<0){
         player->position.x=0;
-    }else if(player->position.x>450-64){
-        player->position.x=450-64;
+    }else if(player->position.x>GetScreenWidth()-player->texture.width){
+        player->position.x=GetScreenWidth()-player->texture.width;
     }
     if (player->position.y<0){
         player->position.y=0;
-    }else if(player->position.y>800-64){
-        player->position.y=800-64;
+    }else if(player->position.y>GetScreenHeight()-player->texture.height){
+        player->position.y=GetScreenHeight()-player->texture.height;
     }
     switch(input){
         case UP:
