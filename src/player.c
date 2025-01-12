@@ -5,7 +5,7 @@
 
 void initPlayer(Player *player){
     //Inicializa al jugador
-    player->position = (Vector2){200,700};
+    player->position = (Vector2){GetScreenWidth()/2,GetScreenHeight()-150};
     player->lives = 3;
     player->score = 0;
     player->texture = (Texture2D) LoadTexture("resources/Loreto-texture-128-64.png");       

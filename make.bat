@@ -14,4 +14,4 @@ rem https://github.com/raysan5/raylib/wiki/Working-for-Web-(HTML5)
 rem ----------------------------------
 rem https://www.youtube.com/watch?v=j6akryezlzc
 emcc -o main.html src\game.c src\input.c src\player.c src\main.c -Wall -std=c99 -D_DEFAULT_SOURCE -Wno-missing-braces -Wunused-result -Os -I.\include -I C:\raylib\src -I C:\raylib\src\external -L C:\raylib\src -s USE_GLFW=3 -s ASYNCIFY -s TOTAL_MEMORY=67108864 -s FORCE_FILESYSTEM=1 --preload-file resources --preload-file sounds --shell-file C:\raylib\src\shell.html C:\raylib\src\web\libraylib.web.a -DPLATFORM_WEB -s EXPORTED_RUNTIME_METHODS=ccall
-move "main.*" "docs"
+move main.* docs
