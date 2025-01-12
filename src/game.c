@@ -48,7 +48,8 @@ void draw_game(Game *game){
             ClearBackground(RAYWHITE);
             input = readInput();
             updatePlayer(&player, input);
-            DrawTextureEx(game->background, (Vector2){0,0}, 0.0f, 1.0f, WHITE);
+            //DrawTextureEx(game->background, (Vector2){0,0}, 0.0f, 1.0f, WHITE);
+            DrawTexture(game->background, 0, 0, WHITE);
             drawPlayer(&player, input);
             break;
         case GAME_OVER:
