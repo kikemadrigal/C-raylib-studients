@@ -2,7 +2,7 @@
 
 Es un juego para poner en práctica la programación en C.
 
-juego online aquí: 
+juego online aquí: https://kikemadrigal.github.io/C-raylib-studients/main.html
 
 # ¿ Que debes saber para hacer un juego así?
 
