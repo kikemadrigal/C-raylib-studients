@@ -2,7 +2,7 @@
 
 Es un juego para poner en práctica la programación en C.
 
-Mira el vídeo: https://youtu.be/lX2JbVvME0M
+Mira el vídeo: 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=lX2JbVvME0M
 " target="_blank"><img src="http://img.youtube.com/vi/lX2JbVvME0M/0.jpg" 
