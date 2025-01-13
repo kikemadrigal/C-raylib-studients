@@ -6,7 +6,8 @@
 void initPlayer(Player *player){
     //Inicializa al jugador
     player->position = (Vector2){GetScreenWidth()/2,GetScreenHeight()-150};
-    player->lives = 3;
+    player->init_position = (Vector2){GetScreenWidth()/2,GetScreenHeight()-64};
+    player->lives = 10;
     player->score = 0;
     player->texture = (Texture2D) LoadTexture("resources/Loreto-texture-128-64.png");       
     player->rectangle_frame=(Rectangle) {
@@ -17,19 +18,17 @@ void initPlayer(Player *player){
     };
     player->frame_counter = 0;
     player->frame_speed = 8;
+    //player->hit=(Sound)LoadSound("sounds/hit.mp3");
 }
-Texture2D getTexturePlayer(){
-    Texture2D textura=LoadTexture("resources/Loreto-texture.png");
-    return textura;
-}
+
 void updatePlayer(Player *player, Input input){
     if(player->position.x<0){
         player->position.x=0;
-    }else if(player->position.x>GetScreenWidth()-player->texture.width){
-        player->position.x=GetScreenWidth()-player->texture.width;
+    }else if(player->position.x>GetScreenWidth()-player->texture.width/2){
+        player->position.x=GetScreenWidth()-player->texture.width/2;
     }
-    if (player->position.y<0){
-        player->position.y=0;
+    if (player->position.y<580){
+        player->position.y=580;
     }else if(player->position.y>GetScreenHeight()-player->texture.height){
         player->position.y=GetScreenHeight()-player->texture.height;
     }
@@ -72,3 +71,4 @@ void unloadPlayer(Player *player){
     //Libera la memoria del jugador
     UnloadTexture(player->texture);
 }
+
