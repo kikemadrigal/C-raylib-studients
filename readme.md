@@ -2,6 +2,13 @@
 
 Es un juego para poner en práctica la programación en C.
 
+Mira el vídeo: https://youtu.be/lX2JbVvME0M
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=lX2JbVvME0M
+" target="_blank"><img src="http://img.youtube.com/vi/lX2JbVvME0M/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+
 juego online aquí: https://kikemadrigal.github.io/C-raylib-studients/main.html
 
 # ¿ Que debes saber para hacer un juego así?

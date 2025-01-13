@@ -65,15 +65,10 @@ void init_game(Game *game ){
 void update_game(Game *game){
     UpdateMusicStream(game->music); 
     switch(game->status){
-        
         case INITIAL:
-
             if (IsKeyPressed(KEY_ENTER)){
                 game->status=MENU;
-                //game->music=musics[MENU];
-                //PlayMusicStream(game->music);
             }
-
             break;
         case MENU:
             PlayMusicStream(game->music);
