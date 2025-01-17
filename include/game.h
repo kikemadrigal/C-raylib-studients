@@ -20,16 +20,22 @@ typedef struct{
     int ultima_pulsacion;
     int counter;
     Music music;
+    float end_time;
     //Sound fxWav;
     int level;
+    bool is_paused;
 }Game;
 
 
 void init_game(Game *game );
+void reset_game(Game *game);
 void update_game(Game *game);
 void draw_game(Game *game);
 void unload_game(Game *game);
-void GUI(void);
-void update_level_1(Game *game);
+void GUI(Game *game);
 void check_collsisions(void);
+
+void init_level_1(Game *game);
+void init_level_2(Game *game);
+void update_level_1(Game *game);
 #endif

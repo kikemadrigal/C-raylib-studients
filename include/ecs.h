@@ -14,6 +14,7 @@ typedef struct {
     int frame_counter;
     int frame_speed;
     int entity_id;
+    char tag[6];
 }Entity;
 
 
@@ -31,6 +32,14 @@ void ECS_UpdateEntities(ECS *ecs, Player *player);
 void ECS_DrawEntities(ECS *ecs);
 Entity ECS_GetEntity(ECS *ecs, int entity_id);
 void ECS_SetEntity(ECS *ecs, int entity_id, Entity entity);
+
+
+void add_tag(Entity *entity, const char *tag);
+void remove_tag(Entity *entity);
+bool has_tag(Entity *entity, const char *tag);
+void search_tag(ECS *ecs, const char *tag, Entity *entities, int *size);
+
+
 
 #endif
 

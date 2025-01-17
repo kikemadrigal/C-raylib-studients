@@ -4,8 +4,12 @@
 #include "input.h"
 typedef struct {
     //Como las texturas se cargan cuando creamos la entidad en el game.c, no necesitamos cargarlas aquí
-    Vector2 position;
-    Vector2 init_position;
+    int x,y;
+    int x_init, y_init;
+    int offset_x;
+    int offset_y;
+    int width;
+    int height;
     short lives;
     long score;
     long hiscore;
@@ -13,7 +17,10 @@ typedef struct {
     Rectangle rectangle_frame;
     int frame_counter;
     int frame_speed;
-    //Sound hit;
+    int anim;
+    bool collidable;
+    float rest_time_colliable;
+    bool visible;
 }Player;
 
 void initPlayer(Player *player);
