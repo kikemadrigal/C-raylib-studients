@@ -43,10 +43,10 @@ goto:eof
     rem ----------------------------------
     rem https://www.youtube.com/watch?v=j6akryezlzc
     start emcc -o main.html src\physics.c src\ecs.c src\game.c src\input.c src\player.c src\main.c -Wall -std=c99 -D_DEFAULT_SOURCE -Wno-missing-braces -Wunused-result -Os -I.\include -I C:\raylib\src -I C:\raylib\src\external -L C:\raylib\src -s USE_GLFW=3 -s ASYNCIFY -s TOTAL_MEMORY=67108864 -s FORCE_FILESYSTEM=1 --preload-file resources --preload-file sounds --shell-file C:\raylib\src\shell.html C:\raylib\src\web\libraylib.web.a -DPLATFORM_WEB -s EXPORTED_RUNTIME_METHODS=ccall
-    rem copy main.data docs
-    rem copy main.html docs
-    rem copy main.js docs
-    rem copy main.wasm docs
+    move /Y main.data docs
+    move /Y main.html docs
+    move /Y main.js docs
+    move /Y main.wasm docs
 goto:eof
 
 :create_android
